@@ -1,0 +1,18 @@
+main: com.cavetale.invisibleitemframes.InvisibleItemFramesPlugin
+
+name: InvisibleItemFrames
+version: 0.1
+description: Make item frames invisible via invisibility potions or arrows
+api-version: 1.13
+
+author: StarTux
+website: https://github.com/StarTux/InvisibleItemFrames
+
+depend: [GenericEvents]
+softdepend: []
+
+permissions:
+
+  invisibleitemframes.use:
+    description: Player permission to make item frames invisible
+    default: op

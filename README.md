@@ -4,8 +4,8 @@ To turn an item frame invisible, throw an invsibility potion at it, or hit it wi
 
 As a player, you require:
 - The `invisibleitemframes.use` permission node
-- Build permissions via the GenericEvents plugin
+- Build permissions via the Core plugin
 
 ## Dependencies
 
-- GenericEvents
+- Core

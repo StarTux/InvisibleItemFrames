@@ -1,6 +1,6 @@
 package com.cavetale.invisibleitemframes;
 
-import com.cavetale.core.event.block.PlayerCanBuildEvent;
+import com.cavetale.core.event.block.PlayerBlockAbilityQuery;
 import com.destroystokyo.paper.event.entity.ProjectileCollideEvent;
 import org.bukkit.entity.Arrow;
 import org.bukkit.entity.ItemFrame;
@@ -51,7 +51,7 @@ public final class InvisibleItemFramesPlugin extends JavaPlugin implements Liste
             return;
         }
         // Check build perms
-        if (!PlayerCanBuildEvent.call(player, itemFrame.getLocation().getBlock())) return;
+        if (!PlayerBlockAbilityQuery.Action.BUILD.query(player, itemFrame.getLocation().getBlock())) return;
         itemFrame.setVisible(false);
         if (proj instanceof Arrow) event.setCancelled(true);
     }
